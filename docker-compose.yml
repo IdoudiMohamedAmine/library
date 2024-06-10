@@ -1,0 +1,29 @@
+services:
+  mysql:
+    container_name: mysql-library
+    image: mysql
+    environment:
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
+      MYSQL_DATA: /var/lib/mysql/data
+      MYSQL_DB: library
+
+    volumes:
+      - mysql:/var/lib/mysql/data
+    ports:
+      - 3306:3306
+    networks:
+      - spring-library
+    restart: unless-stopped
+  mail-dev:
+    container_name: mail-dev-library
+    image: maildev/maildev
+    ports:
+        - 1080:1080
+        - 1025:1025
+networks:
+  spring-library:
+    driver: bridge
+volumes:
+  mysql:
+    driver: local
