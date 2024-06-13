@@ -1,5 +1,6 @@
-package org.example.librarybackend.role;
+package org.example.librarybackend.repository;
 
+import org.example.librarybackend.Entitys.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

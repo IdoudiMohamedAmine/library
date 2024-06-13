@@ -1,8 +1,7 @@
-package org.example.librarybackend.user;
+package org.example.librarybackend.Entitys;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.example.librarybackend.role.Role;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
