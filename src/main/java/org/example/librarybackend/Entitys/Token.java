@@ -15,6 +15,7 @@ public class Token {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(name = "token")
     private String token;
     private LocalDateTime createdAt;
     private LocalDateTime expiresAt;

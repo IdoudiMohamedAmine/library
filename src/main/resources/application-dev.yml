@@ -7,12 +7,13 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
+    show-sql: false
     profiles:
       hibernate:
         format_sql: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
+
   mail:
     host: localhost
     port: 1025
@@ -35,4 +36,4 @@ application:
       expiration: 1200000
     mailing:
       frontend:
-        activation-url : http://localhost:4200/activate-account
+        activation-url: http://localhost:4200/activate-account

@@ -3,11 +3,10 @@ services:
     container_name: mysql-library
     image: mysql
     environment:
-      MYSQL_USER: username
-      MYSQL_PASSWORD: password
+      MYSQL_USER: amine
+      MYSQL_PASSWORD: amine3349E
       MYSQL_DATA: /var/lib/mysql/data
       MYSQL_DB: library
-
     volumes:
       - mysql:/var/lib/mysql/data
     ports:
